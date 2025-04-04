@@ -2,13 +2,13 @@
 import React from 'react';
 
 const Button = ({ label, onClick, type, size, disabled = false }) => {
-  const baseStyles = 'rounded-2xl focus:outline-none transition duration-200 ease-in-out';
+  const baseStyles = 'rounded-2xl focus:outline-none transition duration-200 ease-in-out cursor-pointer';
 
   // Tailwind-based color styles
   const typeStyles = {
-    primary: 'bg-primary text-white hover:bg-blue-600',
+    primary: 'bg-primary text-white hover:bg-secondary',
     secondary: 'bg-gray-500 text-white hover:bg-gray-600',
-    outline: 'bg-white border border-primary border-solid text-primary hover:bg-white hover:text-secondary',
+    outline: 'bg-white border border-primary border-solid text-primary hover:bg-white hover:text-secondary hover:border-secondary',
   };
 
   // Optional: Still keeping for font size
@@ -18,7 +18,7 @@ const Button = ({ label, onClick, type, size, disabled = false }) => {
     lg: 'text-lg',
   };
 
-  // 🎯 Custom padding defined here (not using px-/py- classes)
+  // Custom padding defined here (not using px-/py- classes)
   const customPadding = {
     sm: '6px 12px',
     md: '8px 16px',

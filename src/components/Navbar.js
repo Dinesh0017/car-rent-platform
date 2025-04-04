@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="flex space-x-4 gap-4">
           <Button label="Login" onClick={handleClick} type="outline" size="sm" />
           <Button label="Book Now" onClick={handleClick} type="primary" size="sm" />
-          <Button label="Login" onClick={handleClick} type="secondary" size="sm"/>
+
         </div>
         
       </div>
