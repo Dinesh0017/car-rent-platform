@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import View from "@/components/view";
 import RentLocation from "@/components/RentLocation";
+import GallerySection from "@/components/Gallery";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <FeaturesSection />
       <View />
       <RentLocation />
+      <GallerySection />
       <Footer />
     </>
   );
