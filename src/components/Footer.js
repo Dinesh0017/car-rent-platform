@@ -3,9 +3,7 @@ import Image from "next/image";
 import Button from "./Button";
 
 const Footer = () => {
-  {
-    /* Button click*/
-  }
+  {/* Button click*/}
   const handleClick = () => {
     alert("Button clicked!");
   };
