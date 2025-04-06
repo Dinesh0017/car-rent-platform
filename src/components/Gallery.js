@@ -13,7 +13,7 @@ const galleryImages = [
   ];
   
   const GallerySection = () => (
-    <section className="">
+    <section className="pt-18">
     <div className="container mx-auto px-4 py-8">
       <h2 className="text-center text-3xl font-bold text-blue-900">Car Rental Gallery</h2>
       <div className="flex justify-center mt-4 space-x-12 text-blue-900 font-semibold ">
