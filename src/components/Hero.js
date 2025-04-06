@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import heroCar from "../assets/heroCar.jpg"; // Ensure the image is inside /assets folder
+import heroCar from "../public/assets/heroCar.jpg"; // Ensure the image is inside /assets folder
 import Button from "./Button";
 
 const HeroSection = () => {
