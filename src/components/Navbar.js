@@ -1,38 +1,66 @@
-'use client';
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Button from './Button';
+import Button from "./Button";
 
 const Navbar = () => {
   const handleClick = () => {
-    alert('Button clicked!');
+    alert("Button clicked!");
   };
 
   return (
-    <nav className="bg-white text-primary p-10 shadow-md h-12 flex items-center justify-center">
-      <div className="container mx-auto flex items-center justify-between  w-full">
-        
+    <nav className="fixed top-0 left-0 w-full z-50 bg-transparent text-primary p-6 backdrop-blur-md h-18">
+      <div className="container mx-auto flex items-center justify-between">
         {/* Left - Navigation Links */}
-        <ul className="flex gap-6 text-1rem font-stretch-50% font-medium">
-          <li><Link href="/" className="hover:text-gray-300">Home</Link></li>
-          <li><Link href="/fleet" className=" hover:text-gray-300">Fleet</Link></li>
-          <li><Link href="/contact" className=" hover:text-gray-300">Contact</Link></li>
-          <li><Link href="/about" className=" hover:text-gray-300">About</Link></li>
+        <ul className="flex gap-6 text-base font-semibold">
+          <li>
+            <Link href="/" className="hover:text-secondary">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/fleet" className="hover:text-secondary">
+              Fleet
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="hover:text-secondary">
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" className="hover:text-secondary">
+              About
+            </Link>
+          </li>
         </ul>
 
         {/* Center - Logo */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <Image src="/assets/TCar.png" alt="CarRental Logo" width={256} height={64} />
+          <Image
+            src="/assets/TCar.png"
+            alt="CarRental Logo"
+            width={200}
+            height={50}
+          />
         </div>
 
         {/* Right - Buttons */}
-        <div className="flex space-x-4 gap-4">
-          <Button label="Login" onClick={handleClick} type="outline" size="sm" />
-          <Button label="Book Now" onClick={handleClick} type="primary" size="sm" />
-
+        <div className="flex gap-4">
+          <Button
+            label="Login"
+            onClick={handleClick}
+            type="outline"
+            size="sm"
+          />
+          <Button
+            label="Book Now"
+            onClick={handleClick}
+            type="primary"
+            size="sm"
+          />
         </div>
-        
       </div>
     </nav>
   );
