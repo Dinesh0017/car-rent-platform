@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import heroCar from "../public/assets/heroCar.jpg"; // Ensure the image is inside /assets folder
 import Button from "./Button";
 
 const HeroSection = () => {
@@ -13,7 +12,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src={heroCar}
+          src="/assets/heroCar.jpg"
           alt="Luxury Cars"
           layout="fill"
           objectFit="cover"

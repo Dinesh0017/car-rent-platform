@@ -12,8 +12,7 @@ export default function Home() {
     <Hero />
     <FeaturesSection/>
     <View></View>
-
-    <h1 className="bg-red text-3xl font-bold text-center mt-10">Welcome to Car Rental</h1>
+    <Footer />
     </>
 
   );

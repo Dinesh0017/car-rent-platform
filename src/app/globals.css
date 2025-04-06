@@ -5,6 +5,7 @@
   --color-secondary: #FACC15; /* Yellow */
   --color-gray-dark: #64748B; /* Dark Gray */
   --color-gray-light: #F1F5F9; /* Light Gray */
+  --color-subRed: #DC2626; /* Red */
 }
 
 :root {
