@@ -56,7 +56,7 @@ const View = () => {
   const { name, title, company, image } = testimonials[current];
 
   return (
-    <section className="bg-white py-20 flex px-6 text-center text-[#1d2b64]">
+    <section className="bg-white py-28 flex px-6 text-center text-[#1d2b64]">
       {/* Arrows */}
       <div className="flex items-center justify-center ml-32">
         <button
