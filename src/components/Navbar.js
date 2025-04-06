@@ -1,8 +1,7 @@
 'use client';
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";  // Import next/image
-import Logo from '../assets/TCar.png';  // Import the image
+import Image from "next/image";
 import Button from './Button';
 
 const Navbar = () => {
@@ -24,7 +23,7 @@ const Navbar = () => {
 
         {/* Center - Logo */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <Image src={Logo} alt="CarRental Logo" width={256} height={64} />
+          <Image src="/assets/TCar.png" alt="CarRental Logo" width={256} height={64} />
         </div>
 
         {/* Right - Buttons */}
