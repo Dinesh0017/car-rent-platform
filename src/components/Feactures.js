@@ -55,9 +55,9 @@ const FeaturesSection = () => {
         </div>
 
         {/* Center Video Player with Padding */}
-        <div className="relative w-[full] h-[500px] rounded-lg overflow-hidden shadow-lg px-6">
+        <div className="relative w-[full] h-[500px] rounded-lg overflow-hidden shadow-lg px-6 p-5">
           <video
-            className="w-full h-full rounded-lg"
+            className="w-full h-full"
             autoPlay
             loop
             muted
