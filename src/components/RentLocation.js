@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import Button from './Button';
+import CarCarousel from './CarCarousel';
     
 const RentLocation = () => {
   {/* Button click*/}
@@ -35,7 +36,7 @@ const RentLocation = () => {
   
           {/* Image */}
           <div className="flex-1">
-            <img src="/assets/rentcar.jpg" alt="Car" className="w-full max-w-md mx-auto  shadow-md" />
+            <CarCarousel/>
           </div>
         </div>
       </section>
