@@ -3,10 +3,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
+
   const handleClick = () => {
-    alert("Button clicked!");
+    router.push("/selectsignup"); // or any route you want
   };
 
   return (

@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Button = ({ label, onClick, type, size, disabled = false }) => {
-  const baseStyles = 'rounded-2xl focus:outline-none transition duration-200 ease-in-out cursor-pointer';
+  const baseStyles = 'rounded-md focus:outline-none transition duration-200 ease-in-out cursor-pointer';
 
   // Tailwind-based color styles
   const typeStyles = {

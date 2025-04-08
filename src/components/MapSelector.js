@@ -79,7 +79,7 @@ const MapSelector = () => {
         </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
         {/* Map */}
-        <div className="md:col-span-2 relative rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-all ease-in-out duration-300">
+        <div className="md:col-span-2 relative rounded-md shadow-lg overflow-hidden hover:scale-105 transition-all ease-in-out duration-300">
           <MapContainer
             center={[position.lat, position.lng]}
             zoom={5}
@@ -95,7 +95,7 @@ const MapSelector = () => {
         </div>
 
         {/* Location Details */}
-        <div className="space-y-4 text-blue-800 font-medium bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+        <div className="space-y-4 text-blue-800 font-medium bg-white p-6 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
         <div className="mt-8 max-w-lg mx-auto flex flex-col gap-4 pb-12">
         <div className="relative">
           <input
@@ -103,7 +103,7 @@ const MapSelector = () => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search for a location"
-            className="w-full p-4 pl-12 border border-gray-300 rounded-xl text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary focus:border-blue-500 transition-all ease-in-out duration-300"
+            className="w-full p-4 pl-12 border border-gray-300 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary focus:border-blue-500 transition-all ease-in-out duration-300"
           />
           <div className="absolute top-4.5 left-4 text-gray-400">
             <svg
@@ -126,7 +126,7 @@ const MapSelector = () => {
         </div>
         <button
           onClick={handleSearch}
-          className="w-full py-3 bg-primary text-white rounded-xl hover:primary transition-colors duration-300 ease-in-out cursor-pointer hover:bg-secondary cursor-pointer"
+          className="w-full py-3 bg-primary text-white rounded-md hover:primary transition-colors duration-300 ease-in-out cursor-pointer hover:bg-secondary cursor-pointer"
         >
           Search
         </button>
