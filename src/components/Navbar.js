@@ -8,8 +8,11 @@ import { useRouter } from "next/navigation";
 const Navbar = () => {
   const router = useRouter();
 
-  const handleClick = () => {
+  const handleSignUp = () => {
     router.push("/selectsignup"); // or any route you want
+  };
+  const handleBookCar = () => {
+    router.push("/bookcar"); // or any route you want
   };
 
   return (
@@ -53,13 +56,13 @@ const Navbar = () => {
         <div className="flex gap-4">
           <Button
             label="Login"
-            onClick={handleClick}
+            onClick={handleSignUp}
             type="outline"
             size="sm"
           />
           <Button
             label="Book Now"
-            onClick={handleClick}
+            onClick={handleBookCar}
             type="primary"
             size="sm"
           />
