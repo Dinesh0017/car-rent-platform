@@ -40,7 +40,7 @@ const PricingSection = () => {
             </>
           )}
         </ul>
-        <button className="mt-6 w-full bg-primary text-white py-3 rounded-full hover:bg-secondary cursor-pointer">Book Now</button>
+        <button className="mt-6 w-full bg-primary text-white py-3 rounded-md hover:bg-secondary cursor-pointer">Book Now</button>
       </div>
     </section>
   );

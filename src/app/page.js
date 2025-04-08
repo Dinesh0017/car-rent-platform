@@ -6,6 +6,7 @@ import View from "@/components/view";
 import RentLocation from "@/components/RentLocation";
 
 
+
 export default function Home() {
   return (
     <>
