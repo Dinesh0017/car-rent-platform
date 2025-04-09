@@ -9,10 +9,10 @@ const Navbar = () => {
   const router = useRouter();
 
   const handleSignUp = () => {
-    router.push("/selectsignup"); // or any route you want
+    router.push("/selectsignup");
   };
   const handleBookCar = () => {
-    router.push("/bookcar"); // or any route you want
+    router.push("/bookcar");
   };
 
   return (
