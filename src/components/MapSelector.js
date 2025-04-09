@@ -71,7 +71,7 @@ const MapSelector = () => {
 
   return (
     <section className="px-6 md:px-20 py-20">
-      <h2 className="text-3xl font-bold text-blue-800 mb-8 text-center">
+      <h2 className="text-3xl font-bold text-primary mb-8 text-center">
         Select Your Location
         <p className="text-lg font-normal text-gray-600 mt-2">
           Click on the map to select a location or search for a specific place.
@@ -95,7 +95,7 @@ const MapSelector = () => {
         </div>
 
         {/* Location Details */}
-        <div className="space-y-4 text-blue-800 font-medium bg-white p-6 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+        <div className="space-y-4 text-primary font-medium bg-white p-6 rounded-md shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
         <div className="mt-8 max-w-lg mx-auto flex flex-col gap-4 pb-12">
         <div className="relative">
           <input
@@ -131,7 +131,7 @@ const MapSelector = () => {
           Search
         </button>
       </div>
-          <h3 className="font-bold text-xl text-blue-700 hover:text-blue-500 cursor-pointer transition-colors duration-300 ease-in-out">
+          <h3 className="font-bold text-xl text-primary hover:text-blue-500 cursor-pointer transition-colors duration-300 ease-in-out">
             Selected Location
           </h3>
           <p>

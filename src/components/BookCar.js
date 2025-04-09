@@ -46,6 +46,30 @@ const CarCard = () => {
       transmission: "Manual",
       price: 10000,
     },
+    {
+      title: "Bugatti Chiron",
+      image: "assets/bens.jpg",
+      passengers: 2,
+      doors: 4,
+      transmission: "Auto",
+      price: 20000,
+    },
+    {
+      title: "Bugatti Chiron",
+      image: "assets/bens.jpg",
+      passengers: 2,
+      doors: 4,
+      transmission: "Auto",
+      price: 20000,
+    },
+    {
+      title: "Bugatti Chiron",
+      image: "assets/bens.jpg",
+      passengers: 2,
+      doors: 4,
+      transmission: "Auto",
+      price: 20000,
+    },
   ];
 
   return (
@@ -59,7 +83,7 @@ const CarCard = () => {
       {/* Top Filters */}
       <TopFillterBar />
       {/* Car Cards - vertical scroll container */}
-      <div className="h-[calc(100vh-50px)] overflow-y-auto pr-2 space-y-6">
+      <div className="h-[calc(140vh-50px)] overflow-y-auto pr-2 space-y-6">
         {carData.map((car, index) => (
           <div
             key={index}
