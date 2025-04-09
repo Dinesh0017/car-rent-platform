@@ -2,11 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 
 const HeroSection = () => {
-  const handleClick = () => {
-    alert("Button clicked!");
+  const router1 = useRouter();
+  const handlBookCar = () => {
+    router1.push("/fleet");
   };
+
   return (
     <section className="relative w-full h-[100vh]">
       {/* Background Image */}
@@ -35,7 +38,7 @@ const HeroSection = () => {
           <Link href="/fleet">
             <Button
               label="Book Now"
-              onClick={handleClick}
+              onClick={handlBookCar}
               type="primary"
               size="sm"
             />
