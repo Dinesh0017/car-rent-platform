@@ -2,15 +2,38 @@
 import React from "react";
 import Img from "next/image";
 import { image } from "@heroui/react";
- 
+
 const TeamMember = () => {
-  const teamMembers = Array(6).fill({
-    name: "John Smith",
-    title: "CEO",
-    description:
-      "John is the CEO of Car Rental Web Platform. With his extensive experience in the car rental industry, he leads our team with passion and vision.",
-    image: "/assets/girl.jpeg",
-  });
+  const teamMembers = [
+    {
+      name: "Dinesh Rathnasiri",
+      title: "CEO",
+      description:
+        "John is the CEO of Car Rental Web Platform. With his extensive experience in the car rental industry, he leads our team with passion and vision.",
+      image: "/assets/girl.jpeg",
+    },
+    {
+      name: "John Smith",
+      title: "Assistant Manager",
+      description:
+        "John is the CEO of Car Rental Web Platform. With his extensive experience in the car rental industry, he leads our team with passion and vision.",
+      image: "/assets/girl1.jpeg",
+    },
+    {
+      name: "Mari Stela",
+      title: "Manager",
+      description:
+        "Mari Stela is the CEO of Car Rental Web Platform. With his extensive experience in the car rental industry, he leads our team with passion and vision.",
+      image: "/assets/girl.jpeg",
+    },
+    {
+      name: "John Smith",
+      title: "Assistant Manager",
+      description:
+        "John is the CEO of Car Rental Web Platform. With his extensive experience in the car rental industry, he leads our team with passion and vision.",
+      image: "/assets/girl1.jpeg",
+    },
+  ];
 
   return (
     <div className="p-10 font-sans text-center pt-24">
@@ -24,7 +47,10 @@ const TeamMember = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 ">
           {teamMembers.map((member, index) => (
-            <div key={index} className="text-center shadow-lg transform hover:scale-105 transition duration-300 bg-white p-6">
+            <div
+              key={index}
+              className="text-center shadow-lg transform hover:scale-105 transition duration-300 bg-white p-6"
+            >
               <Img
                 src={member.image}
                 width={80}
