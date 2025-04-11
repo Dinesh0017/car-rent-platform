@@ -1,40 +1,39 @@
 'use client';
 import React from 'react';
 
-const Button = ({ label, onClick, type, size, disabled = false }) => {
-  const baseStyles = 'rounded-md focus:outline-none transition duration-200 ease-in-out cursor-pointer';
+const Button = ({ label, onClick, type = 'primary', size = 'md', disabled = false }) => {
+  const baseStyles =
+    'rounded-md focus:outline-none transition duration-200 ease-in-out font-semibold inline-flex items-center justify-center';
 
-  // Tailwind-based color styles
   const typeStyles = {
     primary: 'bg-primary text-white hover:bg-secondary',
     secondary: 'bg-gray-500 text-white hover:bg-gray-600',
     subcribe: 'bg-subRed text-white hover:bg-secondary',
-    outline: 'bg-white border border-primary border-solid text-primary hover:bg-white hover:text-secondary hover:border-secondary',
+    outline:
+      'bg-white border border-primary text-primary hover:text-secondary hover:border-secondary',
   };
 
-  // Optional: Still keeping for font size
   const sizeStyles = {
-    sm: 'text-sm',
-    md: 'text-base',
-    lg: 'text-lg',
+    sm: 'text-sm px-3 py-1.5',
+    md: 'text-base px-4 py-2',
+    lg: 'text-lg px-5 py-2.5',
+    sub: 'text-sm px-3 py-1.5',
   };
 
-  // Custom padding defined here (not using px-/py- classes)
-  const customPadding = {
-    sm: '6px 12px',
-    md: '8px 16px',
-    lg: '10px 20px',
-    sub: '6px 12px',
-  };
+  const disabledStyles = disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer';
 
-  const buttonClassNames = `${baseStyles} ${typeStyles[type]} ${sizeStyles[size]} ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`;
+  const buttonClassNames = `
+    ${baseStyles}
+    ${typeStyles[type] || typeStyles.primary}
+    ${sizeStyles[size] || sizeStyles.md}
+    ${disabledStyles}
+  `;
 
   return (
     <button
-      className={buttonClassNames}
+      className={buttonClassNames.trim()}
       onClick={onClick}
       disabled={disabled}
-      style={{ padding: customPadding[size] }}
     >
       {label}
     </button>
