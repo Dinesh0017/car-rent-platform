@@ -11,12 +11,13 @@ import {
 } from "lucide-react";
 import LeftNavBar from "./LeftNavBar";
 import TopFillterBar from "./TopFillterBar";
+import Image from "next/image";
 
 const CarCard = () => {
   const carData = [
     {
       title: "Bugatti Chiron",
-      image: "assets/bens.jpg",
+      image: "/assets/bens.jpg",
       passengers: 2,
       doors: 4,
       transmission: "Auto",
@@ -24,7 +25,7 @@ const CarCard = () => {
     },
     {
       title: "Bugatti Chiron",
-      image: "assets/subaru.jpg",
+      image: "/assets/subaru.jpg",
       passengers: 2,
       doors: 4,
       transmission: "Manual",
@@ -32,7 +33,7 @@ const CarCard = () => {
     },
     {
       title: "Bugatti Chiron",
-      image: "assets/bens.jpg",
+      image: "/assets/bens.jpg",
       passengers: 2,
       doors: 4,
       transmission: "Auto",
@@ -40,7 +41,7 @@ const CarCard = () => {
     },
     {
       title: "Bugatti Chiron",
-      image: "assets/subaru.jpg",
+      image: "/assets/subaru.jpg",
       passengers: 2,
       doors: 4,
       transmission: "Manual",
@@ -48,7 +49,7 @@ const CarCard = () => {
     },
     {
       title: "Bugatti Chiron",
-      image: "assets/bens.jpg",
+      image: "/assets/bens.jpg",
       passengers: 2,
       doors: 4,
       transmission: "Auto",
@@ -56,7 +57,7 @@ const CarCard = () => {
     },
     {
       title: "Bugatti Chiron",
-      image: "assets/bens.jpg",
+      image: "/assets/bens.jpg",
       passengers: 2,
       doors: 4,
       transmission: "Auto",
@@ -64,7 +65,7 @@ const CarCard = () => {
     },
     {
       title: "Bugatti Chiron",
-      image: "assets/bens.jpg",
+      image: "/assets/bens.jpg",
       passengers: 2,
       doors: 4,
       transmission: "Auto",
@@ -91,9 +92,11 @@ const CarCard = () => {
               className="flex flex-col md:flex-row border-2 border-gray-light shadow-md p-4 gap-4"
             >
               <div className="w-full md:w-1/2">
-                <img
+                <Image
                   src={car.image}
                   alt={car.title}
+                  width={500}
+                  height={500}
                   className="w-full h-60 object-cover rounded-md"
                 />
               </div>

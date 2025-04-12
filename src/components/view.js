@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -81,7 +82,7 @@ const View = () => {
           
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <img
+            <Image
               src={image}
               alt={name}
               width={56}

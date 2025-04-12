@@ -56,13 +56,13 @@ const LeftNavBar = () => {
             onChange={handleChange}
             step="100"
             aria-label="Price Range"
-            className="w-full h-2 bg-blue-100 rounded-full appearance-none"
+            className="w-full h-2 bg-blue-100 rounded-full appearance-none cursor-pointer"
           />
           <div
             style={{
               left: `calc(${position}% - 25px)`,
             }}
-            className="absolute mt-2 top-5 w-20 text-center text-sm text-secondary font-semibold"
+            className="absolute mt-6 top-5 w-20 text-center text-sm text-secondary font-semibold "
           >
             ${value}
           </div>

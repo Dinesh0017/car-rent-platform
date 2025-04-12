@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Img from "next/image";
+import Image from "next/image";
 import { image } from "@heroui/react";
 
 const TeamMember = () => {
@@ -51,7 +51,7 @@ const TeamMember = () => {
               key={index}
               className="text-center shadow-lg transform hover:scale-105 transition duration-300 bg-white p-6"
             >
-              <Img
+              <Image
                 src={member.image}
                 width={80}
                 height={80}
