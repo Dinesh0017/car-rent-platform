@@ -14,7 +14,7 @@ const ContactSection = () => {
       <div className="px-4 sm:px-8 md:px-20 py-12 mx-auto max-w-7xl">
         <p className="text-sm text-primary font-semibold">Get in touch</p>
         <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">Contact Us</h2>
-        <p className="mb-8 text-gray-600 max-w-xl">
+        <p className="mb-8 text-gray-dark max-w-xl">
           Have any questions or need assistance? Feel free to reach out to us.
         </p>
 

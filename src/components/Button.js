@@ -8,7 +8,7 @@ const Button = ({ label, onClick, type = 'primary', size = 'md', disabled = fals
   const typeStyles = {
     primary: 'bg-primary text-white hover:bg-secondary',
     secondary: 'bg-gray-500 text-white hover:bg-gray-600',
-    subcribe: 'bg-subRed text-white hover:bg-secondary',
+    subscribe: 'bg-subRed text-white hover:bg-secondary',
     outline:
       'bg-white border border-primary text-primary hover:text-secondary hover:border-secondary',
   };

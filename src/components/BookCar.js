@@ -88,7 +88,7 @@ const CarCard = () => {
           {carData.map((car, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row border-2 border-gray-200 shadow-md p-4 gap-4"
+              className="flex flex-col md:flex-row border-2 border-gray-light shadow-md p-4 gap-4"
             >
               <div className="w-full md:w-1/2">
                 <img
@@ -99,7 +99,7 @@ const CarCard = () => {
               </div>
 
               <div className="w-full md:w-1/2 flex flex-col justify-between p-2 sm:p-4">
-                <div className="flex flex-wrap items-center gap-4 text-gray-700 mb-3 text-sm sm:text-base">
+                <div className="flex flex-wrap items-center gap-4 text-gray-dark mb-3 text-sm sm:text-base">
                   <span className="flex items-center gap-1">
                     <Car size={16} /> Luxury
                   </span>
@@ -114,7 +114,7 @@ const CarCard = () => {
                   </span>
                 </div>
 
-                <ul className="text-sm text-gray-600 space-y-1 mb-4 list-none">
+                <ul className="text-sm text-gray-dark space-y-1 mb-4 list-none">
                   <li>
                     <CheckCircle size={14} className="inline text-green-600" />{" "}
                     Unlimited mileage
@@ -140,7 +140,7 @@ const CarCard = () => {
                 {/* Pricing and Book Now button */}
                 <div className="flex flex-col sm:flex-row sm:justify-between items-start sm:items-end gap-4">
                   <div className="text-left sm:text-right">
-                    <p className="text-lg font-bold text-gray-800">
+                    <p className="text-lg font-bold text-gray-dark">
                       Total Price
                     </p>
                     <p className="text-2xl font-bold text-yellow-600">
@@ -149,7 +149,7 @@ const CarCard = () => {
                     <p className="text-xs text-green-500">
                       ✔ Free cancellation
                     </p>
-                    <p className="text-xs text-blue-500">
+                    <p className="text-xs text-primary">
                       ✔ Online check-in available
                     </p>
                   </div>

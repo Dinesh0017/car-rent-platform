@@ -56,13 +56,13 @@ const View = () => {
   const { name, title, company, image } = testimonials[current];
 
   return (
-    <section className="bg-gray-200 py-32 px-6 text-[#1d2b64]">
+    <section className="bg-gray-100 py-32 px-6 text-primary">
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-auto">
         {/* Left Arrow */}
         <div className="md:ml-8">
           <button
             onClick={handlePrev}
-            className="w-10 h-10 border border-[#1d2b64] rounded-full flex items-center justify-center"
+            className="w-10 h-10 border border-primary rounded-full flex items-center justify-center"
           >
             <FaChevronLeft />
           </button>
@@ -116,7 +116,7 @@ const View = () => {
         <div className="md:mr-8">
           <button
             onClick={handleNext}
-            className="w-10 h-10 border border-[#1d2b64] rounded-full flex items-center justify-center"
+            className="w-10 h-10 border border-primary rounded-full flex items-center justify-center"
           >
             <FaChevronRight />
           </button>

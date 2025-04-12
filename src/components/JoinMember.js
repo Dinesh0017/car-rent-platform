@@ -2,7 +2,7 @@ import React from "react";
 
 const JoinMember = () => {
   return (
-    <section className="mt-20 px-6 py-12 bg-gray-100 rounded-lg shadow-lg flex flex-col items-center text-center">
+    <section className="mt-20 px-6 py-12 bg-gray-light rounded-lg shadow-lg flex flex-col items-center text-center">
       <h3 className="text-2xl md:text-3xl font-bold text-primary">
         Join Our Team
       </h3>

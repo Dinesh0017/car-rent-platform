@@ -15,7 +15,7 @@ const CustomeRadioGroup = ({ name, options = [], selected, onChange }) => {
             onChange={(e) => onChange?.(e.target.value)}
           />
           <div className="w-3 h-3 rounded-full border-2 border-gray-400 peer-checked:border-gray-300 peer-checked:bg-secondary transition" />
-          <span className="text-sm text-gray-800">{option}</span>
+          <span className="text-sm text-gray-dark">{option}</span>
         </label>
       ))}
     </div>
