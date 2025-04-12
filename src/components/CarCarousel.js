@@ -1,33 +1,51 @@
 'use client';
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const CarCarousel = () => (
-  <div className="flex-1 mx-auto h-auto max-w-2xl">
+  <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <Carousel
       autoPlay
       infiniteLoop
       showThumbs={false}
       showStatus={false}
       showIndicators={true}
-      width={"100%"}
-      height={"100%"}
-      className="shadow-md rounded-lg"
+      className="rounded-lg shadow-lg"
     >
       <div>
-        <img src="/assets/rentcar.jpg" alt="Car 1" />
+        <img
+          src="/assets/rentcar.jpg"
+          alt="Car 1"
+          className="object-cover w-full h-60 sm:h-72 md:h-80 lg:h-96 rounded-lg"
+        />
       </div>
       <div>
-        <img src="/assets/subaru.jpg" alt="Car 2" />
+        <img
+          src="/assets/subaru.jpg"
+          alt="Car 2"
+          className="object-cover w-full h-60 sm:h-72 md:h-80 lg:h-96 rounded-lg"
+        />
       </div>
       <div>
-        <img src="/assets/tesla.jpg" alt="Car 3" />
+        <img
+          src="/assets/tesla.jpg"
+          alt="Car 3"
+          className="object-cover w-full h-60 sm:h-72 md:h-80 lg:h-96 rounded-lg"
+        />
       </div>
       <div>
-        <img src="/assets/bens.jpg" alt="Car 4" />
+        <img
+          src="/assets/bens.jpg"
+          alt="Car 4"
+          className="object-cover w-full h-60 sm:h-72 md:h-80 lg:h-96 rounded-lg"
+        />
       </div>
       <div>
-        <img src="/assets/bmw.jpeg" alt="Car 5" />
+        <img
+          src="/assets/bmw.jpeg"
+          alt="Car 5"
+          className="object-cover w-full h-60 sm:h-72 md:h-80 lg:h-96 rounded-lg"
+        />
       </div>
     </Carousel>
   </div>
