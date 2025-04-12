@@ -1,7 +1,6 @@
-'use client';
+"use client";
 import Image from "next/image";
 import { useState } from "react";
-
 
 const galleryImages = [
   { src: "/assets/bens.jpg", alt: "Yellow van", category: "Luxury" },
@@ -23,32 +22,48 @@ const GallerySection = () => {
       : galleryImages.filter((img) => img.category === activeCategory);
 
   return (
-    <section className="pt-20 pb-10 px-10">
-      <h2 className="text-center text-3xl font-bold text-blue-900">Car Rental Gallery</h2>
-      <div className="flex justify-center mt-4 space-x-6 text-primary font-medium cursor-pointer">
-        {categories.map((car) => (
-          <button
-            key={car}
-            onClick={() => setActiveCategory(car)}
-            className={`${
-              activeCategory === car ? "font-bold text-secondary cursor-pointer" : "hover:text-secondary cursor-pointer"
-            } focus:outline-none cursor-pointer` }
-          >
-            {car} Cars
-          </button>
-        ))}
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-        {filteredImages.map((img, index) => (
-          <Image
-            key={index}
-            src={img.src}
-            alt={img.alt}
-            width={500}
-            height={300}
-            className="rounded-xl"
-          />
-        ))}
+    <section className="pt-20 pb-10 px-6">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-center text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+          Car Rental Gallery
+        </h2>
+
+        {/* Filter Buttons */}
+        <div className="flex flex-wrap justify-center gap-4 text-primary font-medium mb-8">
+          {categories.map((car) => (
+            <button
+              key={car}
+              onClick={() => setActiveCategory(car)}
+              className={`px-4 py-2 rounded-full transition-all duration-200 border 
+              ${
+                activeCategory === car
+                  ? "bg-primary text-white border-primary"
+                  : "border-primary text-primary hover:bg-primary hover:text-white"
+              }
+            `}
+            >
+              {car} Cars
+            </button>
+          ))}
+        </div>
+
+        {/* Image Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredImages.map((img, index) => (
+            <div
+              key={index}
+              className="overflow-hidden rounded-xl shadow-md hover:shadow-xl transition duration-300"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                width={500}
+                height={300}
+                className="rounded-xl object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

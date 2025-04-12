@@ -5,49 +5,40 @@ import Button from "./Button";
 import { useRouter } from "next/navigation";
 
 const HeroSection = () => {
-  const router1 = useRouter();
-  const handlBookCar = () => {
-    router1.push("/fleet");
-  };
+  const router = useRouter();
 
   return (
-    <section className="relative w-full h-[100vh]">
+    <section className="relative w-full h-[100vh] overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 -z-10">
         <Image
           src="/assets/heroCar.jpg"
           alt="Luxury Cars"
-          layout="fill"
-          objectFit="cover"
+          fill
+          className="object-cover"
           quality={100}
+          priority
         />
       </div>
 
-      {/* Content at the Bottom */}
-      <div className="absolute bottom-20 w-full text-center text-white px-6">
-        <h1 className="text-5xl font-bold">
+      {/* Content */}
+      <div className="absolute bottom-20 w-full px-6 text-center text-white">
+        <h1 className="text-3xl md:text-5xl font-bold leading-tight">
           Find Your Perfect Ride in Minutes!
         </h1>
-        <p className="text-lg mt-4">
+        <p className="text-base md:text-lg mt-4">
           Choose from a wide range of cars at the best prices.
         </p>
 
-        <div className="h-5"></div>
-
-        <div className="flex flex-row items-center gap-3 content-center justify-center">
-          <Link href="/fleet">
-            <Button
-              label="Book Now"
-              onClick={handlBookCar}
-              type="primary"
-              size="sm"
-            />
-          </Link>
-
-          <Link href="/about">
-            <button className="text-white rounded hover:font-bold">
-              Learn More....
-            </button>
+        <div className="mt-6 flex justify-center gap-4">
+          <Button
+            label="Book Now"
+            onClick={() => router.push("/fleet")}
+            type="primary"
+            size="sm"
+          />
+          <Link href="/about" className="text-white underline hover:font-semibold">
+            Learn More...
           </Link>
         </div>
       </div>
