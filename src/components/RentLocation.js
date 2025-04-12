@@ -29,7 +29,7 @@ const RentLocation = () => {
               size="md"
             />
               <p className="text-xs text-primary mt-2">
-                By clicking Rent Now you're confirming that you agree with our <a href="#" className="underline font-semibold">Terms and Conditions</a>.
+                By clicking Rent Now you&apos;re confirming that you agree with our <a href="#" className="underline font-semibold">Terms and Conditions</a>.
               </p>
             </div>
           </div>
