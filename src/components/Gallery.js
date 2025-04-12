@@ -24,7 +24,7 @@ const GallerySection = () => {
   return (
     <section className="pt-20 pb-10 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-center text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+        <h2 className="text-center text-3xl md:text-4xl font-bold text-primary mb-6">
           Car Rental Gallery
         </h2>
 
