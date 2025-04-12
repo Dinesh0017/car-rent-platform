@@ -30,14 +30,14 @@ const HeroSection = () => {
           Choose from a wide range of cars at the best prices.
         </p>
 
-        <div className="mt-6 flex justify-center gap-4">
+        <div className="mt-6 flex justify-center gap-2">
           <Button
             label="Book Now"
             onClick={() => router.push("/fleet")}
             type="primary"
             size="sm"
           />
-          <Link href="/about" className="text-white underline hover:font-semibold">
+          <Link href="/about" className="text-white underline hover:font-bold mt-1">
             Learn More...
           </Link>
         </div>

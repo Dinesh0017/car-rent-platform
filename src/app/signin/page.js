@@ -32,7 +32,7 @@ const SignIn = () => {
             <p className="text-sm text-white underline text-right cursor-pointer">
               Forgot Password ...?
             </p>
-            <button className="bg-primary text-white p-2 rounded-xl mt-2 hover:bg-secondary cursor-pointer">
+            <button className="bg-primary text-white p-2 rounded-md mt-2 hover:bg-secondary cursor-pointer">
               Sign In
             </button>
           </form>
