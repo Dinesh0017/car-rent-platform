@@ -23,6 +23,16 @@ const LocationForm = () => {
             className="w-full px-3 py-2 border rounded-lg bg-gray-200 shadow-lg"
           />
         </div>
+                {/* Pickup Date and Time */}
+                <div className="flex items-center gap-2">
+          <CalendarClock size={18} />
+          <input
+            type="datetime-local"
+            value={pickupDateTime}
+            onChange={(e) => setPickupDateTime(e.target.value)}
+            className="w-full px-2 py-2 border rounded-lg bg-gray-200 shadow-lg"
+          />
+        </div>
 
         {/* Dropoff Location */}
         <div className="flex items-center gap-2">
@@ -36,16 +46,7 @@ const LocationForm = () => {
           />
         </div>
 
-        {/* Pickup Date and Time */}
-        <div className="flex items-center gap-2">
-          <CalendarClock size={18} />
-          <input
-            type="datetime-local"
-            value={pickupDateTime}
-            onChange={(e) => setPickupDateTime(e.target.value)}
-            className="w-full px-2 py-2 border rounded-lg bg-gray-200 shadow-lg"
-          />
-        </div>
+
 
         {/* Dropoff Date and Time */}
         <div className="flex items-center gap-2">
