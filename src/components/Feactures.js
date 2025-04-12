@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import {
   FaBook,
   FaCarSide,
@@ -10,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 const FeatureItem = ({ icon, title, description }) => (
-  <div className="flex items-start gap-4 p-6 border border-primary rounded-lg bg-white shadow-md mb-4 hover:shadow-xl hover:scale-105 transform transition duration-300">
+  <div className="flex items-start gap-4 p-6 border border-primary rounded-lg bg-white shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300">
     <div className="text-primary text-3xl">{icon}</div>
     <div>
       <h3 className="text-lg font-semibold text-primary">{title}</h3>
@@ -21,22 +20,22 @@ const FeatureItem = ({ icon, title, description }) => (
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-grayLight py-3 px-8 h-[100vh]">
-      {/* Title Section with Padding */}
-      <div className="text-center mb-20 px-6 leading-relaxed">
-        <p className="font-bold text-primary mt-4">Rent Your Dream Car</p>
-        <p className=" text-primary text-4xl font-bold mt-2">
+    <section className="bg-grayLight py-10 px-4 md:px-8">
+      {/* Title Section */}
+      <div className="text-center mb-12 px-4">
+        <p className="font-bold text-primary text-base">Rent Your Dream Car</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mt-2">
           Explore Our Features
-        </p>
-        <p className=" text-primary mt-3">
-          Choose from a wide range of cars and enjoy a seamless car rental
-          experience.
+        </h2>
+        <p className="text-primary mt-3 max-w-2xl mx-auto text-sm md:text-base">
+          Choose from a wide range of cars and enjoy a seamless car rental experience.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 items-center ">
-        {/* Left Features with Padding */}
-        <div className="space-y-6 px-6">
+      {/* Grid Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Left Features */}
+        <div className="space-y-6">
           <FeatureItem
             icon={<FaBook />}
             title="Easy Booking"
@@ -54,26 +53,22 @@ const FeaturesSection = () => {
           />
         </div>
 
-        {/* Center Video Player with Padding */}
-        <div className="relative w-[full] h-[500px] rounded-lg overflow-hidden shadow-lg px-6 p-5">
+        {/* Video Section */}
+        <div className="w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-lg">
           <video
-            className="w-full h-full"
+            className="w-full h-full object-cover"
             autoPlay
             loop
             muted
             controls
           >
-            <source
-              src="../../public/videos/video.mp4"
-              type="video/mp4"
-              className=""
-            />
+            <source src="/videos/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
 
-        {/* Right Features with Padding */}
-        <div className="space-y-6 px-6">
+        {/* Right Features */}
+        <div className="space-y-6">
           <FeatureItem
             icon={<FaCarSide />}
             title="Wide Selection of Cars"
