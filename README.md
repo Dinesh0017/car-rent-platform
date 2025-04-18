@@ -18,7 +18,7 @@ This project is built using **Next.js**, **Tailwind CSS**, and **React Icons**, 
 
 ## 🖼️ Preview
 
-![Website Screenshot](./screenshots/hero-preview.png)
+![Website Screenshot](./public/screenshots/hero-preview.png)
 
 
 
