@@ -18,9 +18,9 @@ This project is built using **Next.js**, **Tailwind CSS**, and **React Icons**, 
 
 ## 🖼️ Preview
 
-![Website Screenshot](./public/screenshots/hero-preview.png)
+![Website Screenshot](./screenshots/hero-preview.png)
 
-> Make sure this screenshot is located in `public/screenshots/hero-preview.png`. You can rename your uploaded image to match.
+
 
 ---
 
