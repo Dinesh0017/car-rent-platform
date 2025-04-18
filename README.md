@@ -45,5 +45,15 @@ This project is built using **Next.js**, **Tailwind CSS**, and **React Icons**, 
 
 ---
 
-## 📁 Folder Structure
+## 🚀 Getting Started
+
+Clone the repository and run the development server:
+
+```bash
+git clone https://github.com/yourusername/car-rental-web.git
+cd car-rental-web
+npm install
+npm run dev
+
+Open http://localhost:3000 to view it in the browser.
 
