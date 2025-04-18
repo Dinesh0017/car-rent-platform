@@ -18,7 +18,7 @@ This project is built using **Next.js**, **Tailwind CSS**, and **React Icons**, 
 
 ## 🖼️ Preview
 
-![Website Screenshot](./public/screenshots/hero-preview.png)
+![Website Screenshot](https://github.com/Dinesh0017/car-rent-platform/blob/77944870bc24129e0f9d94e0b7fa004d056423ec/hero-preview.png?raw=true)
 
 
 
